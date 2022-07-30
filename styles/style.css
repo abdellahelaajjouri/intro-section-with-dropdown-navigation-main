@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* .menu-expanded {
+  background-color: red;
+  color: white;
+  width: 20px;
+  float: right;
+  height: 100vh;
+}
+.menu-expanded main,
+.menu-expanded footer {
+  display: none;
+}
+.list {
+  display: none;
+} */
+
+:root {
+  --Almost-White: hsl(0, 0%, 98%);
+  --Medium-Gray: hsl(0, 0%, 41%);
+  --Almost-Black: hsl(0, 0%, 8%);
+}
+
+.list {
+  z-index: 10000;
+  position: absolute;
+  background-color: white;
+  margin-top: 1rem;
+}
+
+p {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Epilogue", sans-serif;
+  font-size: 18px;
+  background-color: var(--Almost-White);
+}
+
+li{
+  list-style: none;
+}
+
+/* NAVBARE (header) */
+
+header {
+  display: flex;
+  flex-direction: row;
+  padding: 1.5rem;
+}
+
+.links {
+  display: flex;
+  color: var(--Almost-Black);
+  flex-basis: 80%;
+}
+
+.logo {
+  flex-basis: 8%;
+}
+
+
+.links div{
+  margin-left: 2rem ;
+}
+
+.links p {
+  padding: 0 0.5em;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.links p:hover {
+  opacity: 1;
+}
+
+.forms button {
+  background-color: transparent;
+  padding: 0.4rem 0.8rem;
+  opacity: 0.8;
+  border: none;
+  cursor: pointer;
+}
+
+.forms button:hover {
+  opacity: 1;
+}
+
+.forms .register {
+  border-radius: 10px;
+  border: 1px solid var(--Almost-Black);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+/* Content (article) */
+
+article {
+  display: flex;
+  margin: 0 8rem 0 8rem;
+}
+
+article h1 {
+  font-size: 6rem;
+  padding: 7rem 0 2rem 0;
+}
+article p {
+  width: 45%;
+  line-height: 0.7cm;
+  font-size: 18px;
+}
+
+article button {
+  margin: 2.5rem 0 5rem 0;
+  font-size: 18px;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  color: var(--Almost-White);
+  background-color: var(--Almost-Black);
+}
+
+.clients {
+  margin-top: 3rem;
+}
+.clients ul {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+}
+.clients ul li {
+  list-style: none;
+}
+
+.content {
+  flex-basis: 80%;
+}
+
+.hero img {
+  height: 42rem;
+}

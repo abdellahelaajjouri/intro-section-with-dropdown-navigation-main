@@ -1,39 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
-  Features
-  Company
-  Careers
-  About
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <main>
+      <div class="menu-expanded">
+        <header>
+          <img
+            src="./helpers/images/icon-menu.svg"
+            alt="icon-close-menu"
+            class="icon-close-menu"
+          />
+        </header>
+        <main>
+          <div class="Features">
+            <h3>
+              Features
+              <img
+                src="/helpers/images/icon-arrow-down.svg"
+                alt="icon-arrow-down"
+                class="icon-arrow-down"
+              />
+            </h3>
+            <div class="list">
+              <p>Todo List</p>
+              <p>Calendar</p>
+              <p>Reminders</p>
+              <p>Planing</p>
+            </ul>
+          </div>
+          <div class="company">
+            <h3>
+              Company <img
+              src="/helpers/images/icon-arrow-down.svg"
+              alt="icon-arrow-down"
+              class="icon-arrow-down"
+            />
+            </h3>
+            <div class="list">
+              <p>History</p>
+              <p>Our Team</p>
+              <p>Blog</p>
+            </div>
+          </div>
+          <div class="Careers">
+            <h3>Careers</h3>
+          </div>
+          <div class="About">
+            <h3>About</h3>
+          </div>
+        </main>
+        <footer>
+          <button>Login</button>
+          <button>Register</button>
+        </footer>
+      </div>
+    </main>
+    Features Company Careers About Login Register Make remote work  
 
-  Login
-  Register
+    <div class="attribution">
+      Challenge by
+      <a
+        rel="noopener"
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Abdellah el aajjouri</a>.
+    </div> -->
 
-  Make remote work
+    <main>
+      <header class="navbar">
+        <div class="logo">
+          <img src="./helpers/images/logo.svg" alt="logo" />
+        </div>
+        <div class="links">
+          <div class="Features">
+            <p class="dropdown">
+              Features
+              <img
+                src="/helpers/images/icon-arrow-down.svg"
+                alt="icon-arrow-down"
+                class="icon-arrow-down"
+              />
+            </p>
+            <ul class="list">
+              <li>Todo List</li>
+              <li>Calendar</li>
+              <li>Reminders</li>
+              <li>Planing</li>
+            </ul>
+          </div>
+          <div class="company">
+            <p class="dropdown">
+              Company
+              <img
+                src="/helpers/images/icon-arrow-down.svg"
+                alt="icon-arrow-down"
+                class="icon-arrow-down"
+              />
+            </p>
+            <ul class="list">
+              <li>History</li>
+              <li>Our Team</li>
+              <li>Blog</li>
+            </ul>
+          </div>
+          <div class="Careers">
+            <p>Careers</p>
+          </div>
+          <div class="About">
+            <p>About</p>
+          </div>
+        </div>
+        <div class="forms">
+          <button>Login</button>
+          <button class="register">Register</button>
+        </div>
+      </header>
 
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
+      <article>
+        <div class="content">
+          <h1>
+            Make <br />
+            remote work
+          </h1>
+          <p>
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
 
-  Learn more
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+          <div class="btn">
+            <button>Learn more</button>
+          </div>
+          
+          <div class="clients">
+            <ul>
+              <li>
+                <img
+                  src="/helpers/images/client-databiz.svg"
+                  alt="client-databiz"
+                />
+              </li>
+              <li>
+                <img
+                  src="/helpers/images/client-audiophile.svg"
+                  alt="client-audiophile"
+                />
+              </li>
+              <li>
+                <img src="/helpers/images/client-meet.svg" alt="client-meet" />
+              </li>
+              <li>
+                <img
+                  src="/helpers/images/client-maker.svg"
+                  alt="client-maker"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="hero">
+          <img
+            src="/helpers/images/image-hero-desktop.png"
+            alt="hero-desktop"
+          />
+        </div>
+      </article>
+    </main>
+
+    <script src="./app/app.js"></script>
+  </body>
 </html>
